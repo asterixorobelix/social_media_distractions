@@ -5,6 +5,16 @@
 **Status**: Draft
 **Input**: User description: "this is a browser website which is should be mobile responsive which is intended to show young adults the um impact or the frequency of m social media messages and distractions. It's mainly going to be focused on men but it would be work on women also. It should be simple and visually engaging. user will enter in the age and then it will show the average um frequency of social media messages and input from social media in um young adults of that age based on data and statistics."
 
+## Clarifications
+
+### Session 2026-01-07
+
+- Q: How should the system handle ages outside the young adult range (e.g., age 13-17 or 36-99)? → A: All ages 13-99 should display appropriate age-specific data. The "young adult focus" refers to the tone, messaging, and visual engagement being designed for that demographic, not data availability. Data coverage should span the full 13-99 age range.
+- Q: Which chart/visualization types should be used to display statistics? → A: Bar charts for platform breakdown + animated counters for key metrics (daily minutes, notifications)
+- Q: What color scheme should be used for visual design? → A: Platform-branded colors (TikTok pink, Instagram gradient, Snapchat yellow, Facebook blue) with both light and dark mode support
+- Q: What animation style should be used for displaying statistics? → A: Smooth count-up animations (1-2 seconds) with ease-out timing for numbers, slide-in for charts
+- Q: What typography style should be used? → A: An interesting, fun font that appeals to young adults and enhances visual engagement
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Age-Based Social Media Statistics Display (Priority: P1)
@@ -17,7 +27,7 @@ A young adult visits the website to understand how much social media distraction
 
 **Acceptance Scenarios**:
 
-1. **Given** the user is on the landing page, **When** they enter their age (18-35) and submit, **Then** the page displays visual statistics showing average daily social media messages, notifications, and distraction frequency for that age group
+1. **Given** the user is on the landing page, **When** they enter their age (13-99) and submit, **Then** the page displays visual statistics showing average daily social media messages, notifications, and distraction frequency for that age group
 2. **Given** the user enters a valid age, **When** the statistics load, **Then** the data is presented with clear visual indicators (charts, animations, or infographics) that are engaging and easy to understand
 3. **Given** the user is viewing statistics for one age, **When** they want to see data for a different age, **Then** they can easily change the age input and see updated statistics without page reload
 
@@ -57,12 +67,10 @@ A user wants to see statistics that more accurately reflect their demographic. T
 
 ### Edge Cases
 
-- What happens when the user enters an age outside the target range (below 18 or above 35)?
-- How does the system handle ages where statistical data is limited or unavailable?
-- What happens when the user enters invalid input (letters, negative numbers, decimals)?
-- How does the system respond if statistical data fails to load?
-- What experience do users get on very old browsers or devices?
-- How does the system handle extremely narrow screen widths (below 320px)?
+- **Invalid age input**: When user enters letters, negative numbers, or decimals, display error message "Please enter a valid age between 13 and 99" (per FR-010)
+- **Data load failure**: If statistical data fails to load, display user-friendly error message with retry option
+- **Limited browser support**: Users on very old browsers (pre-ES6) may experience degraded functionality; provide graceful degradation where possible
+- **Extremely narrow screens**: For widths below 320px, maintain vertical stacking with minimum readable font sizes (14px minimum)
 
 ## Requirements *(mandatory)*
 
@@ -72,7 +80,7 @@ A user wants to see statistics that more accurately reflect their demographic. T
 - **FR-002**: System MUST validate age input to ensure it is a positive integer between 13 and 99
 - **FR-003**: System MUST display average frequency of social media messages per day for the entered age group
 - **FR-004**: System MUST display average frequency of social media distractions/interruptions for the entered age group
-- **FR-005**: System MUST present statistical data in a visually engaging format using charts, infographics, or animated visualizations
+- **FR-005**: System MUST present statistical data using bar charts for platform time breakdown and animated counters for key metrics (daily minutes, notifications, distraction rate)
 - **FR-006**: System MUST be fully responsive and usable on mobile devices (smartphones and tablets)
 - **FR-007**: System MUST adapt layout and visualizations to screen widths from 320px to 1920px
 - **FR-008**: System MUST provide optional gender selection (Male/Female/Prefer not to say)
@@ -80,6 +88,12 @@ A user wants to see statistics that more accurately reflect their demographic. T
 - **FR-010**: System MUST provide clear error messages when invalid age is entered
 - **FR-011**: System MUST load and display statistics within 3 seconds of age submission
 - **FR-012**: System MUST maintain visual engagement and simplicity throughout the user experience
+- **FR-013**: System MUST provide age-appropriate statistical data for all ages 13-99, not just the young adult range
+- **FR-014**: System MUST use supportive, normalizing messaging that reassures users social media distractions are common (tone: "it's not just you")
+- **FR-015**: System MUST use platform-branded colors for visualizations (TikTok pink, Instagram gradient, Snapchat yellow, Facebook blue) to make data immediately recognizable
+- **FR-016**: System MUST support both light and dark display modes with appropriate color contrast ratios (WCAG 2.1 AA minimum)
+- **FR-017**: System MUST animate numeric counters with smooth count-up effect (1-2 second duration, ease-out timing) and charts with slide-in animations
+- **FR-018**: System MUST use an engaging, fun typography style that appeals to young adults with clear text hierarchy (large display numbers for statistics, readable body text minimum 16px)
 
 ### Key Entities
 
@@ -101,8 +115,9 @@ A user wants to see statistics that more accurately reflect their demographic. T
 ## Assumptions
 
 1. Statistical data will be embedded in the application or loaded from a static data source (not requiring real-time API calls to research databases)
-2. The target age range is primarily 18-35 based on "young adults" terminology, but the system will accept ages 13-99 to accommodate edge cases
+2. Statistical data coverage spans ages 13-99. The "young adult" focus refers to the design tone and messaging style (visually engaging, supportive), not data availability limits
 3. "Simple and visually engaging" means the design should prioritize clarity over complexity, with 2-3 key statistics rather than overwhelming data dumps
 4. Gender data filtering is optional functionality that enhances but does not block the core experience
 5. Data sources will be credited/cited somewhere on the page to establish credibility
 6. The website is informational/educational in nature and does not collect or store personal user data
+7. Messaging should normalize social media distractions and reassure users this is a common experience across demographics
