@@ -1,0 +1,178 @@
+{
+  "ageGroups": {
+    "13-17": {
+      "all": {
+        "dailyMinutes": 240,
+        "platformBreakdown": {
+          "tiktok": 95,
+          "instagram": 60,
+          "snapchat": 55,
+          "facebook": 10,
+          "other": 20
+        },
+        "notifications": 30,
+        "distractionRate": 0.55,
+        "topPlatforms": ["TikTok", "Instagram", "Snapchat"]
+      },
+      "male": {
+        "dailyMinutes": 220,
+        "platformBreakdown": {
+          "tiktok": 85,
+          "instagram": 50,
+          "snapchat": 45,
+          "facebook": 15,
+          "other": 25
+        },
+        "notifications": 27,
+        "distractionRate": 0.52,
+        "topPlatforms": ["TikTok", "Instagram", "Snapchat"]
+      },
+      "female": {
+        "dailyMinutes": 260,
+        "platformBreakdown": {
+          "tiktok": 105,
+          "instagram": 70,
+          "snapchat": 65,
+          "facebook": 5,
+          "other": 15
+        },
+        "notifications": 33,
+        "distractionRate": 0.58,
+        "topPlatforms": ["TikTok", "Instagram", "Snapchat"]
+      }
+    },
+    "18-24": {
+      "all": {
+        "dailyMinutes": 186,
+        "platformBreakdown": {
+          "tiktok": 76,
+          "instagram": 53,
+          "snapchat": 35,
+          "facebook": 22,
+          "other": 0
+        },
+        "notifications": 23,
+        "distractionRate": 0.50,
+        "topPlatforms": ["TikTok", "Instagram", "Snapchat"]
+      },
+      "male": {
+        "dailyMinutes": 178,
+        "platformBreakdown": {
+          "tiktok": 70,
+          "instagram": 48,
+          "snapchat": 30,
+          "facebook": 20,
+          "other": 10
+        },
+        "notifications": 20,
+        "distractionRate": 0.48,
+        "topPlatforms": ["TikTok", "Instagram", "Snapchat"]
+      },
+      "female": {
+        "dailyMinutes": 193,
+        "platformBreakdown": {
+          "tiktok": 82,
+          "instagram": 58,
+          "snapchat": 40,
+          "facebook": 13,
+          "other": 0
+        },
+        "notifications": 26,
+        "distractionRate": 0.52,
+        "topPlatforms": ["TikTok", "Instagram", "Snapchat"]
+      }
+    },
+    "25-34": {
+      "all": {
+        "dailyMinutes": 140,
+        "platformBreakdown": {
+          "tiktok": 50,
+          "instagram": 37,
+          "facebook": 26,
+          "snapchat": 27,
+          "other": 0
+        },
+        "notifications": 18,
+        "distractionRate": 0.45,
+        "topPlatforms": ["TikTok", "Instagram", "Facebook"]
+      },
+      "male": {
+        "dailyMinutes": 133,
+        "platformBreakdown": {
+          "tiktok": 45,
+          "instagram": 32,
+          "facebook": 28,
+          "snapchat": 20,
+          "other": 8
+        },
+        "notifications": 16,
+        "distractionRate": 0.42,
+        "topPlatforms": ["TikTok", "Facebook", "Instagram"]
+      },
+      "female": {
+        "dailyMinutes": 147,
+        "platformBreakdown": {
+          "tiktok": 55,
+          "instagram": 42,
+          "facebook": 24,
+          "snapchat": 26,
+          "other": 0
+        },
+        "notifications": 20,
+        "distractionRate": 0.48,
+        "topPlatforms": ["TikTok", "Instagram", "Snapchat"]
+      }
+    },
+    "35-44": {
+      "all": {
+        "dailyMinutes": 95,
+        "platformBreakdown": {
+          "tiktok": 25,
+          "instagram": 22,
+          "facebook": 35,
+          "snapchat": 8,
+          "other": 5
+        },
+        "notifications": 12,
+        "distractionRate": 0.38,
+        "topPlatforms": ["Facebook", "TikTok", "Instagram"]
+      },
+      "male": {
+        "dailyMinutes": 88,
+        "platformBreakdown": {
+          "tiktok": 22,
+          "instagram": 18,
+          "facebook": 35,
+          "snapchat": 5,
+          "other": 8
+        },
+        "notifications": 10,
+        "distractionRate": 0.35,
+        "topPlatforms": ["Facebook", "TikTok", "Instagram"]
+      },
+      "female": {
+        "dailyMinutes": 102,
+        "platformBreakdown": {
+          "tiktok": 28,
+          "instagram": 26,
+          "facebook": 35,
+          "snapchat": 10,
+          "other": 3
+        },
+        "notifications": 14,
+        "distractionRate": 0.41,
+        "topPlatforms": ["Facebook", "TikTok", "Instagram"]
+      }
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2026-01-07",
+    "sources": [
+      "Pew Research Center - Americans' Social Media Use 2025",
+      "Statista - Time Spent on Social Media by Age (U.S. 2024)",
+      "Common Sense Media - Social Media & Youth Media Use Research",
+      "Academic Research - Social Media and Distraction Studies"
+    ],
+    "disclaimer": "Statistics represent averages compiled from multiple research sources. Individual experiences may vary."
+  }
+}
