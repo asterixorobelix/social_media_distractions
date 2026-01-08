@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visualize social media message frequency and distractions by age. Discover how much time your age group spends on TikTok, Instagram, Snapchat, and Facebook.">
+    <meta name="theme-color" content="#1877F2">
+    <title>Social Media Impact Visualizer</title>
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Social Media Impact Visualizer">
+    <meta property="og:description" content="Discover how social media affects your age group. See usage statistics, platform breakdowns, and distraction rates.">
+    <meta property="og:url" content="https://social-media-impact-viz.up.railway.app">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Google Fonts - Poppins (fun, modern, rounded) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Chart.js v4.4.1 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Social Media Impact Visualizer</h1>
+            <p class="subtitle">See how social media affects people your age</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <form id="age-form" aria-label="Enter your age to see statistics">
+                    <div class="form-group">
+                        <label for="age-input">Your Age</label>
+                        <input
+                            type="number"
+                            id="age-input"
+                            name="age"
+                            placeholder="Enter age (13-99)"
+                            min="13"
+                            max="99"
+                            required
+                            aria-required="true"
+                            aria-describedby="age-error"
+                        >
+                    </div>
+
+                    <div id="age-error" class="error-message" role="alert" aria-live="polite"></div>
+
+                    <div class="form-group">
+                        <label>Gender (Optional)</label>
+                        <div class="gender-options" role="radiogroup" aria-label="Select your gender">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="male" id="gender-male">
+                                <span class="radio-text">Male</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="female" id="gender-female">
+                                <span class="radio-text">Female</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="" id="gender-none" checked>
+                                <span class="radio-text">Prefer not to say</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">See My Stats</button>
+                </form>
+
+                <p class="supportive-message">
+                    You're not alone. Social media distractions are common across all ages.
+                    Let's see what the data says about your age group.
+                </p>
+            </section>
+
+            <section id="results-section" class="results-section hidden">
+                <div class="loading-state" id="loading-indicator">
+                    <div class="spinner"></div>
+                    <p>Loading your statistics...</p>
+                </div>
+
+                <div id="stats-content" class="stats-content hidden">
+                    <h2>Your Age Group Statistics</h2>
+
+                    <div class="key-metrics">
+                        <div class="metric-card">
+                            <div class="metric-value" id="daily-minutes">0</div>
+                            <div class="metric-label">minutes per day</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value" id="notifications">0</div>
+                            <div class="metric-label">notifications daily</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value" id="distraction-rate">0%</div>
+                            <div class="metric-label">feel distracted daily</div>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <h3>Platform Breakdown</h3>
+                        <canvas id="platform-chart" role="img" aria-label="Bar chart showing time spent on each social media platform"></canvas>
+                    </div>
+
+                    <div class="data-info">
+                        <p id="data-source-info"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Data compiled from <a href="data-sources.html" target="_blank">multiple research sources</a></p>
+            <p class="disclaimer">Statistics represent averages. Individual experiences may vary.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/stats.js"></script>
+    <script src="scripts/visualizations.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

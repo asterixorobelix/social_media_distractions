@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sources - Social Media Impact Visualizer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <style>
+        .sources-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .sources-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .sources-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .sources-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .sources-content {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .source-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .source-section h2 {
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--color-facebook);
+            padding-bottom: 0.5rem;
+        }
+
+        .source-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+        }
+
+        .source-item h3 {
+            color: var(--color-facebook);
+            margin-bottom: 0.5rem;
+        }
+
+        .source-item a {
+            color: var(--color-facebook);
+            word-break: break-word;
+            text-decoration: none;
+        }
+
+        .source-item a:hover {
+            text-decoration: underline;
+        }
+
+        .source-url {
+            margin: 0.75rem 0;
+            font-size: 0.9375rem;
+        }
+
+        .key-data {
+            margin-top: 1rem;
+        }
+
+        .key-data h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-size: 0.9375rem;
+        }
+
+        .key-data ul {
+            margin: 0;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .key-data li {
+            margin-bottom: 0.25rem;
+        }
+
+        .disclaimer-box {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--color-facebook);
+            margin-top: 2rem;
+        }
+
+        .disclaimer-box h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .disclaimer-box p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--color-facebook);
+            text-decoration: none;
+            font-weight: var(--font-weight-semibold);
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="sources-container">
+        <a href="index.html" class="back-link">← Back to Visualizer</a>
+
+        <div class="sources-header">
+            <h1>Data Sources</h1>
+            <p>Research citations used to compile social media usage statistics</p>
+        </div>
+
+        <div class="sources-content">
+            <div class="source-section">
+                <h2>Primary Sources</h2>
+
+                <div class="source-item">
+                    <h3>1. Pew Research Center - Americans' Social Media Use 2025</h3>
+                    <p class="source-url"><strong>URL:</strong> <a href="https://www.pewresearch.org/internet/2025/11/20/americans-social-media-use-2025/" target="_blank" rel="noopener">https://www.pewresearch.org/internet/2025/11/20/americans-social-media-use-2025/</a></p>
+                    <div class="key-data">
+                        <h4>Key Data:</h4>
+                        <ul>
+                            <li>Platform usage by demographics</li>
+                            <li>Gender differences in social media consumption</li>
+                            <li>Teen and young adult usage patterns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="source-item">
+                    <h3>2. Statista - Time Spent on Social Media by Age (U.S. 2024)</h3>
+                    <p class="source-url"><strong>URL:</strong> <a href="https://www.statista.com/statistics/1484565/time-spent-social-media-us-by-age/" target="_blank" rel="noopener">https://www.statista.com/statistics/1484565/time-spent-social-media-us-by-age/</a></p>
+                    <div class="key-data">
+                        <h4>Key Data:</h4>
+                        <ul>
+                            <li>Ages 18-24: 186 minutes/day (3 hours 6 minutes)</li>
+                            <li>Ages 25-34: 140 minutes/day (2 hours 20 minutes)</li>
+                            <li>Platform-specific breakdowns (TikTok, Instagram, Snapchat, Facebook)</li>
+                            <li>Gender gap data (~15 minutes more for women)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="source-item">
+                    <h3>3. Common Sense Media - Social Media & Youth Media Use Research</h3>
+                    <p class="source-url"><strong>URL:</strong> <a href="https://www.commonsensemedia.org/research" target="_blank" rel="noopener">https://www.commonsensemedia.org/research</a></p>
+                    <div class="key-data">
+                        <h4>Key Data:</h4>
+                        <ul>
+                            <li>Teen girls: 1 hour 32 minutes/day</li>
+                            <li>Teen boys: 52 minutes/day</li>
+                            <li>Platform preferences by gender</li>
+                            <li>Control and usage concerns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="source-item">
+                    <h3>4. Academic Research - Social Media Distraction Studies</h3>
+                    <p class="source-url"><strong>URLs:</strong></p>
+                    <ul>
+                        <li><a href="https://www.tandfonline.com/doi/full/10.1080/15213269.2021.1959350" target="_blank" rel="noopener">https://www.tandfonline.com/doi/full/10.1080/15213269.2021.1959350</a></li>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8674581/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC8674581/</a></li>
+                    </ul>
+                    <div class="key-data">
+                        <h4>Key Data:</h4>
+                        <ul>
+                            <li>Ages 18-29: 50% report social media distracts them from daily tasks</li>
+                            <li>Average notifications: ~23 messages/day for ages 16-25</li>
+                            <li>Distraction frequency and impact on productivity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="source-item">
+                    <h3>5. Gallup Poll - Teen Social Media Usage</h3>
+                    <p class="source-url"><strong>URL:</strong> <a href="https://news.gallup.com/poll/512576/teens-spend-average-hours-social-media-per-day.aspx" target="_blank" rel="noopener">https://news.gallup.com/poll/512576/teens-spend-average-hours-social-media-per-day.aspx</a></p>
+                    <div class="key-data">
+                        <h4>Key Data:</h4>
+                        <ul>
+                            <li>Teens: Average 4.8 hours/day on social media</li>
+                            <li>Mental health correlations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="source-section">
+                <h2>Data Compilation Notes</h2>
+                <ul>
+                    <li>All statistics represent averages compiled from multiple research sources</li>
+                    <li>Individual experiences may vary significantly</li>
+                    <li>Data current as of January 2026</li>
+                    <li>Gender-specific data based on binary reporting in research studies</li>
+                    <li>Age groupings: 13-17, 18-24, 25-34, 35-44</li>
+                </ul>
+            </div>
+
+            <div class="disclaimer-box">
+                <h3>Disclaimer</h3>
+                <p>The statistics displayed on this website are educational estimates based on publicly available research. They represent aggregate trends and may not reflect individual experiences. Data sources are peer-reviewed studies, government-recognized research organizations, and reputable media research institutions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/theme.js"></script>
+</body>
+</html>
