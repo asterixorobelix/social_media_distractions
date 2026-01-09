@@ -1,5 +1,7 @@
 # Social Media Impact Visualizer
 
+**Live Site:** https://social-media-distractions.netlify.app/
+
 A browser-based data visualization tool that shows social media usage statistics and distraction rates by age group.
 
 ## Features
