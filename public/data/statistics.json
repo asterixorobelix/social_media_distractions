@@ -163,6 +163,129 @@
         "distractionRate": 0.41,
         "topPlatforms": ["Facebook", "TikTok", "Instagram"]
       }
+    },
+    "45-54": {
+      "all": {
+        "dailyMinutes": 75,
+        "platformBreakdown": {
+          "tiktok": 15,
+          "instagram": 18,
+          "facebook": 32,
+          "snapchat": 3,
+          "other": 7
+        },
+        "notifications": 9,
+        "distractionRate": 0.32,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      },
+      "male": {
+        "dailyMinutes": 68,
+        "platformBreakdown": {
+          "tiktok": 12,
+          "instagram": 14,
+          "facebook": 30,
+          "snapchat": 2,
+          "other": 10
+        },
+        "notifications": 7,
+        "distractionRate": 0.28,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      },
+      "female": {
+        "dailyMinutes": 82,
+        "platformBreakdown": {
+          "tiktok": 18,
+          "instagram": 22,
+          "facebook": 34,
+          "snapchat": 4,
+          "other": 4
+        },
+        "notifications": 11,
+        "distractionRate": 0.36,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      }
+    },
+    "55-64": {
+      "all": {
+        "dailyMinutes": 58,
+        "platformBreakdown": {
+          "tiktok": 8,
+          "instagram": 12,
+          "facebook": 30,
+          "snapchat": 1,
+          "other": 7
+        },
+        "notifications": 6,
+        "distractionRate": 0.25,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      },
+      "male": {
+        "dailyMinutes": 52,
+        "platformBreakdown": {
+          "tiktok": 6,
+          "instagram": 9,
+          "facebook": 28,
+          "snapchat": 1,
+          "other": 8
+        },
+        "notifications": 5,
+        "distractionRate": 0.22,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      },
+      "female": {
+        "dailyMinutes": 64,
+        "platformBreakdown": {
+          "tiktok": 10,
+          "instagram": 15,
+          "facebook": 32,
+          "snapchat": 1,
+          "other": 6
+        },
+        "notifications": 7,
+        "distractionRate": 0.28,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      }
+    },
+    "65+": {
+      "all": {
+        "dailyMinutes": 42,
+        "platformBreakdown": {
+          "tiktok": 4,
+          "instagram": 8,
+          "facebook": 25,
+          "snapchat": 0,
+          "other": 5
+        },
+        "notifications": 4,
+        "distractionRate": 0.18,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      },
+      "male": {
+        "dailyMinutes": 38,
+        "platformBreakdown": {
+          "tiktok": 3,
+          "instagram": 6,
+          "facebook": 24,
+          "snapchat": 0,
+          "other": 5
+        },
+        "notifications": 3,
+        "distractionRate": 0.15,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      },
+      "female": {
+        "dailyMinutes": 46,
+        "platformBreakdown": {
+          "tiktok": 5,
+          "instagram": 10,
+          "facebook": 26,
+          "snapchat": 0,
+          "other": 5
+        },
+        "notifications": 5,
+        "distractionRate": 0.21,
+        "topPlatforms": ["Facebook", "Instagram", "TikTok"]
+      }
     }
   },
   "metadata": {

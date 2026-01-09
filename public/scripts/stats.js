@@ -39,7 +39,10 @@ const StatsModule = (function() {
         if (age >= 13 && age <= 17) return '13-17';
         if (age >= 18 && age <= 24) return '18-24';
         if (age >= 25 && age <= 34) return '25-34';
-        if (age >= 35 && age <= 99) return '35-44'; // Map 35+ to 35-44 group
+        if (age >= 35 && age <= 44) return '35-44';
+        if (age >= 45 && age <= 54) return '45-54';
+        if (age >= 55 && age <= 64) return '55-64';
+        if (age >= 65) return '65+';
         return '18-24'; // Default fallback
     }
 
